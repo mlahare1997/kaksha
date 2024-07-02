@@ -1,0 +1,795 @@
+*{
+font-family: 'Roboto Condensed', sans-serif;
+}
+/* SLIDEBAR */
+.ti-fullscreen{
+	font-weight: 900;
+	color: #e6e6e6;
+	cursor: pointer;
+	font-size: 18px;
+}
+.alert{
+	display: none;
+}
+.far,.fas{
+font-family: "fontawesome";
+}
+.fa-plus{
+	color: #fff;
+}
+.Admin-Panel{
+background: #E3E8EA;
+}
+.Admin-Header-Top{
+position: fixed;
+z-index: 1;
+width: 100vw;
+background: #251a32;
+box-shadow: 0px 2px 10px 3px rgba(0,0,0,0.4);
+}
+.Admin-Header-Top-section{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding:8px 15px 10px 15px;
+}
+#course_detail,#course_syllabus{
+height: 90px;
+}
+#Ap-Table-header{
+width: 100%;
+background: #251a32;
+}
+#Ap-Table-header p{
+color: #e5e5e5;
+padding: 12px;
+font-weight: 500;
+font-size: 20px;
+margin: 0;
+}
+.Admin-Header-Top-section .My-Account .img,.Side-Navs .img{
+height: 40px;
+outline: none;
+border: none;
+width: 40px;
+background: #fff;
+border-radius: 50%;
+margin-right: 10px;
+cursor: pointer;
+}
+.Admin-Header-Top-section .Search-Bar #Admin-Search{
+width: 450px;
+border-top-left-radius: 30px;
+border-bottom-left-radius: 30px;
+height: calc(34px + 0.06rem);
+padding-left: 18px;
+color: #000;
+font-weight: 600;
+border: none;
+outline: none;
+}
+.Admin-Header-Top-section .Search-Bar #Admin-Submit{
+margin-left: -5px;
+outline: none;
+border-top-right-radius: 30px;
+border-bottom-right-radius: 30px;
+width: 50px;
+height: 35px;
+color: #fff;
+font-weight: 900;
+background: #F16939;
+padding: 0 5px;
+border:none;
+}
+.Admin-Header-Top-section .My-Account span,.Side-Navs span{
+color: #c6c6c6;
+font-size: 17px;
+padding-top: 2px;
+font-weight: 600;
+cursor: pointer;
+}
+.Admin-Header-Top-section .My-Account span .ti-angle-double-down{
+color: #c6c6c6;
+font-size: 13px;
+font-weight: 900;
+cursor: pointer;
+}
+.Admin-Header-Top-section #close_btn{
+display: none;
+}
+.Ap_course_sub_list{
+display: none;
+height: 280px;
+overflow-y: scroll;
+}
+.Ap_course_sub_list a{
+color: #000;
+text-underline-position: unset;
+}
+.Ap_course_sub_list{
+width: 42%;
+top: 60px;
+position: absolute;
+z-index: 150;
+left: 50%;
+transform: translateX(-42%);
+}
+.Ap_course_sub_list ul a li{
+background: #FFFFFF;
+list-style-type: none;
+padding: 8px;
+padding-left: 25px;
+border-bottom: 1px solid #efefef;
+}
+.Ap_course_sub_list ul li a{
+padding: 20px 5px;
+text-decoration: none;
+color: #000;
+}
+:is(.Ap_course_sub_list)::-webkit-scrollbar{
+width: 8px;
+}
+:is(.Ap_course_sub_list)::-webkit-scrollbar-thumb{
+width: 8px;
+border-radius: 10px;
+height: 100px;
+box-shadow: inset 0 0 5px grey;
+background: #f4f4f4;
+}
+:is(.Ap_course_sub_list)::-webkit-scrollbar-track{
+border-radius: 10px;
+box-shadow: inset 0 0 5px #ccc;
+}
+.far,.fas{
+color: #251a32;
+cursor: pointer;
+}
+.fa-camera{
+color: #eeeeee;
+}
+.Admin-Header-Top{
+z-index: 1000;
+}
+.Search-Bar input{
+height: 40px;
+border-radius: 4px 0px 0px 4px;
+border: none;
+outline: none;
+}
+.Search-Bar button{
+padding: 0 20px;
+border-radius: 0px 4px 4px 0px;
+border: none;
+color: #fff;
+background: #E66030;
+outline: none; 
+}
+@media (max-width: 910px){
+.Admin-Header-Top{
+
+}
+.ti-fullscreen{
+display: none;
+}
+.Admin-Header-Top-section{
+flex-direction: column;
+
+}
+.Admin-Header-Top-section .logo{
+position: absolute;
+top: 6px;
+left: 30px;
+}
+.Admin-Header-Top-section .My-Account{
+position: absolute;
+top: 6px;
+right: 40px;
+
+}
+.Admin-Header-Top-section .Search-Bar{
+margin-top: 50px;
+}
+}
+@media (max-width:900px){
+.Ap_course_sub_list{
+width: 60%;
+left: 50%;
+transform: translateX(-48%);
+}	
+}
+.Side-Bar{
+float: left;
+position: absolute;
+margin-top: 60px;
+width: 308px;
+height: 100vh;
+overflow: hidden;
+overflow-y: scroll;
+background: #251a32;
+}
+.Side-Bar .Account-Info{
+width: 308px;
+height: 72px;
+background: #8ecbf4;
+}
+.Side-Bar .Account-Info #Account-Profile{
+height: 38px;
+width: 38px;
+background: #000;
+border-radius: 50%;
+margin: 0px 20px 0px 20px;
+}
+.Side-Bar .Account-Info #Account-Id{
+font-size: 19px;
+font-weight: normal;
+color: #fff;
+}
+.Side-Bar .Account-Info #Account-Id div:last-child{
+font-size: 15px;
+font-weight: 300;
+}
+.Side-Bar .Slide-Navs ul{
+padding: 0px;
+}
+.Side-Bar .Slide-Navs #Dashbord-li{
+position: relative;
+padding: 18px 25px;
+list-style-type: none;
+background: #fff;
+}
+.Side-Bar .Slide-Navs ul a li:not(#Dashbord-li){
+position: relative;
+list-style-type: none;
+background: #251a32;
+padding: 18px 25px;
+border-bottom: 1px solid  #003366;
+color: #e5e5e5;
+font-weight: 600;
+cursor: pointer;
+}
+.Side-Bar .Slide-Navs ul a li:not(#Dashbord-li):hover{
+background:  #012c54;
+color: #fff;
+}
+.Side-Bar .Slide-Navs ul a li .ti-angle-right{
+position: absolute;
+right: 18px;
+top: 50%;
+transform: translateY(-50%);
+font-size: 10px;
+font-weight: bolder;
+}
+.Side-Bar .Slide-Navs ul a li:hover .ti-angle-right{
+transform: rotateZ(90deg);
+}
+.Side-Bar .Slide-Navs ul li .ti{
+margin-right: 6px;
+}
+.Side-Bar .Slide-Navs ul a li{
+font-size: 16px;
+font-weight: 500;
+color: #000;
+}
+.Admin-Right-Area{
+margin-top: 45px;
+padding: 45px 50px;
+width: calc(100% - 308px);
+float: right;
+height: 100vh;
+overflow: hidden;
+overflow-y: scroll;
+background: #E3E8EA;
+}
+.Admin-Right-Area .Admin-Top #breadcrumbs ul{
+list-style-type: none;
+margin: 0;
+padding:0;
+}
+.Admin-Right-Area .Admin-Top #breadcrumbs ul li{
+display: inline-flex;
+padding: 2px 6px 12px 0px;
+font-size: 16px;
+color: #251a32;
+font-weight: normal;
+}
+.Admin-Right-Area .Admin-Top #breadcrumbs ul li a{
+font-size: 16px;
+color: #251a32;
+font-weight: normal;
+}
+.Admin-Right-Area .Admin-Top #back-button .btn a{
+text-decoration: none;
+color: #fff;
+font-weight: 600;
+}
+.Admin-Right-Area .Admin-dash-panel{
+padding: 0;
+background: #ffffff;
+margin-bottom: 30px;
+}
+.Admin-Right-Area .Admin-dash-panel .Admin-dash{
+padding: 15px;
+}
+.Admin-Right-Area .Admin-dash-panel .Admin-dash h3{
+font-size: 28px;
+font-weight: 700;
+padding-left: 11px;
+}
+.Admin-Right-Area .Admin-dash-panel .Admin-dash p{
+font-size: 16px;
+padding-left: 11px;
+color: #666768;
+}
+.Admin-panel-gallery-img{
+position: relative;
+overflow:hidden;
+margin: 8px 0px 18px 0px;
+border-radius: 1px;
+}
+.Admin-panel-gallery-img a img{
+width: 100%;
+overflow: hidden;
+height: 210px;
+}
+.Admin-panel-gallery-img a img{
+transition: all 0.3s ease;
+}
+.Admin-panel-gallery-img a:after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(31,44,100,0.2);
+}
+.Admin-panel-gallery-img:hover a img{
+transform: scale(1.1);
+transition: all 0.4s ease;
+}
+.Admin-panel-gallery-img a span{
+top: 50%;
+left: 50%;
+font-weight: 700;
+z-index: 1;
+font-size: 34px;
+white-space: nowrap;
+transform: translate(-50%,-50%);
+position: absolute;
+text-decoration: none;
+}
+.Admin-Right-Area .Admin-table1 #Ap-Table-header{
+width: 100%;
+background: #251a32;
+}
+.Admin-Right-Area .Admin-table1 #Ap-Table-header p{
+color: #e5e5e5;
+padding: 12px;
+font-weight: 500;
+font-size: 20px;
+margin: 0;
+}
+.Admin-Right-Area .Admin-table1{
+background: #fff;
+}
+.Admin-Right-Area .Form .Form-Part input{
+width: 555px;
+height: 40px;
+padding-left: 15px;
+border: 1px solid #dddddd;
+outline: none;
+margin-top: 20px;
+}
+.Admin-Right-Area .Admin-table1 .col-xl-12:last-child{
+padding: 0px 18px;
+}
+.Admin-Right-Area .Admin-table1 .col-xl-12:last-child input,.Admin-dash-panel .Course-Down-Area .Course-Form input{
+width: 100%;
+height: 40px;
+margin-top: 20px;
+padding-left: 15px;
+border: 1px solid #dddddd;
+outline: none;
+}
+.Admin-dash-panel .Course-Part-3,.Course-Part-2,.Course-Part-4{
+display: none;
+}
+.Admin-dash-panel .Course-Down-Area .Course-Form{
+border: 1px solid #ddd;
+}
+.Admin-dash-panel .Course-Down-Area .Course-Form textarea{
+border: 1px solid #dddddd;
+outline: none;
+padding: 15px;
+}
+.Admin-dash-panel .Admin-dash #Toggle-Tab-1,.Admin-dash-panel .Admin-dash #Toggle-Tab-2,
+.Admin-dash-panel .Admin-dash #Toggle-Tab-3,.Admin-dash-panel .Admin-dash #Toggle-Tab-4{
+border: none;
+outline: none;
+background: #ffffff;
+margin-right: -2px;
+padding: 10px 15px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.Admin-dash-panel .Admin-dash #Toggle-Tab-1{
+border: 1px solid #ddd;
+}
+.Admin-dash-panel .Admin-dash .btn-tab .ti{
+color:#0071bc;
+font-size: 20px;
+}
+/* ADD LESSON */
+.Admin-dash-panel .Course-Part-2 .Course-Form div{
+position: relative;
+}
+.Admin-dash-panel .Course-Part-2 .Course-Form .upload_btn{
+position: absolute;
+font-size: 17px;
+padding: 7px 29px;
+top: 20px;
+}
+.search_course,.lesson_form{
+border:1px solid #ddd;
+padding: 25px 25px;
+margin-top: 25px;
+}
+.lesson_field textarea{
+height: 70px;
+padding-left: 15px;
+padding-top: 5px;
+}
+.lesson_field input[type='text'],input[type='number'],input[type='file'] ,textarea{
+border:1px solid #ddd;
+padding-left: 18px;
+outline: none;
+margin-bottom: 20px;
+width: 100%;
+height: 40px;
+}
+.fas{
+font-family: "fontawesome";
+}
+.lesson_form label{
+color: #92969A;
+font-size: 17px;
+margin-top: 10px;
+font-weight: 500;
+margin-bottom: 16px;
+}
+.Admin-dash-panel .Course-Part-2 .Course-Form div{
+position: relative;
+}
+.Admin-dash-panel .Course-Part-2 .Course-Form .upload_btn{
+position: absolute;
+font-size: 17px;
+padding: 7px 29px;
+top: 20px;
+}
+*{
+font-family: 'Roboto Condensed', sans-serif;
+}
+.fas,.far{
+font-family: "fontawesome";
+}
+.quiz_content{
+box-shadow: 0px 4px 20px 4px rgb(0 0 0 / 8%);
+background: #E3E8EA;
+height: 100%;
+padding-bottom: 150px;
+}
+.quiz_main_content .quiz_area{
+background: #fff;
+margin: 16px 0px;
+height: auto;
+padding: 30px 50px;
+}
+.quiz_heading{
+background-color: #251a32;
+margin-bottom: 15px;
+}
+.quiz_heading h4{
+color: #e5e5e5;
+padding: 8px 0px 6px 25px;
+font-weight: 500;
+}
+.load_quiz_fields{
+margin: 25px 0px;
+padding: 0px 50px;
+}
+.load_quiz_fields input[type="text"],.load_quiz_fields input[type="number"]{
+width: 100%;
+height: 40px;
+outline: none;
+border: 1px solid #ddd;
+padding-left: 16px;
+}
+textarea{
+height: 70px;
+padding: 4px 16px;
+outline: none;
+width: 100%;
+border: 1px solid #ddd;
+}
+.alert{
+z-index: 600;
+display: block;
+position: absolute;
+top: 90%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+@media screen and (max-width: 1000px){
+.quiz_activation{
+flex-direction: column;
+}
+}
+.Admin-dash-panel .Course-Part-2 .Course-Form div{
+position: relative;
+}
+.Admin-dash-panel .Course-Part-2 .Course-Form .upload_btn{
+position: absolute;
+font-size: 17px;
+padding: 7px 29px;
+top: 20px;
+}
+.search_course{
+border:1px solid #ddd;
+padding: 25px 25px;
+margin: 25px 0px;
+}
+.lesson_field input[type='text'],input[type='number']{
+border:1px solid #ddd;
+padding-left: 18px;
+height: 50px;
+}
+.fas{
+font-family: "fontawesome";
+}
+.lesson_table{
+margin: 20px 0px;
+font-family: 'Roboto Condensed', sans-serif;
+}
+.lesson_table tr th{
+color: #636363;
+}
+.lesson_table tr td img{
+height: 38px;
+width: 38px;
+border-radius: 50%;
+}
+.table tr td #delete_btn,.table tr td #view_btn,.table tr td #status_btn{
+font-size: 19px;
+font-family: 'fontawesome';
+color: #2F4F73;
+cursor: pointer;
+}
+.add_slider_content{
+padding: 40px;
+margin: 25px 0px;
+border: 1px solid #ddd;
+}
+.add_slider_content #text_area{
+height: 90px;
+width: 100%;
+border: 1px solid #ddd;
+outline: none;
+padding: 5px 16px;
+margin-top: 25px;
+}
+.add_slider_content form input{
+width: 100%;
+height: 50px;
+border: 1px solid #ddd;
+outline: none;
+}
+.table{
+font-family: 'Roboto Condensed', sans-serif;
+}
+.table tr th{
+color: #636363;
+}
+.table tr td img{
+height: 38px;
+width: 38px;
+border-radius: 50%;
+}
+.table tr td #delete_btn,.table tr td #view_btn,.table tr td #status_btn{
+font-size: 19px;
+font-family: 'fontawesome';
+color: #2F4F73;
+cursor: pointer;
+}
+.fas,.far{
+cursor: pointer;
+color: #000;
+}
+.fa-pause-circle,.fa-play-circle{
+font-size: 18px;
+}
+.table tr td #delete_btn,.table tr td #view_btn,.table tr td #status_btn{
+font-size: 19px;
+font-family: 'fontawesome';
+color: #2F4F73;
+cursor: pointer;
+}
+.profile_form input{
+width: 100%;
+height: 40px;
+border: 1px solid #ddd;
+outline: none;
+margin: 15px 0px;
+}
+.profile_pic img{
+}
+.profile_data input{
+width: 100%;
+height: 40px;
+}
+.stu_profile_detail span{
+font-size: 15px;
+}
+.stu_profile_detail{
+background: #fff;
+padding: 35px 15px;
+box-shadow: 0px 5px 18px -11px rgb(150 150 150 / 80%);
+border: 1px solid #f3f2f2;
+}
+.login_user_input form label{
+font-size: 17px;
+font-weight: 500;
+color: #636363;
+}
+#loggedin_user b{
+color: #666768;
+}
+#loggedin_user input{
+width: 80%;
+}
+.fas{
+font-family: "fontawesome";
+}
+.crop_user_img{
+position: absolute;
+right: 20px;
+top: 5px;
+}img {
+display: block;
+max-width: 100%;
+}
+.preview {
+overflow: hidden;
+width: 210px;
+height: 210px;
+margin: 10px;
+margin-left: 15px;
+border: 1px solid red;
+}
+.label b{
+margin-bottom: 20px;
+}
+#quiz_result{
+padding: 15px;
+width: 100%;
+border: 1px solid #ddd;
+margin-top: 12px;
+}
+#quiz_result input{
+width: 100%;
+border: 1px solid #ddd;
+outline: none;
+height: 40px;
+padding-left: 16px;
+}
+#Quiz-Drop-Menu{
+display: none;
+}
+.Side-Bar .Slide-Navs ul #Ac-Drop-Menu,.Side-Bar .Slide-Navs ul #User-Drop-Menu,.Side-Bar .Slide-Navs ul #Quiz-Drop-Menu{
+display: none;
+}
+.Side-Bar .Slide-Navs ul #Ac-Drop-Menu ul a #Drop-Links,.Side-Bar .Slide-Navs ul #User-Drop-Menu ul a #Drop-Links,.Side-Bar .Slide-Navs ul #Quiz-Drop-Menu ul a #Drop-Links{
+padding: 10px 50px;
+font-size: 15px;
+font-weight: 400;
+transition: all 0.3s ease;
+}
+.Side-Bar .Slide-Navs ul #Ac-Drop-Menu ul a #Drop-Links:hover,.Side-Bar .Slide-Navs ul #Quiz-Drop-Menu ul a #Drop-Links:hover,.Side-Bar .Slide-Navs ul #User-Drop-Menu ul a #Drop-Links:hover{
+background: #012c54;
+list-style-type: none;
+padding-left: 60px;
+transition: all 0.3s ease;
+}
+.profile_form input{
+width: 100%;
+height: 40px;
+border: 1px solid #ddd;
+outline: none;
+margin: 15px 0px;
+}
+.profile_pic img{
+}
+.profile_data input{
+width: 100%;
+height: 40px;
+}
+.stu_profile_detail span{
+font-size: 15px;
+}
+.stu_profile_detail{
+background: #fff;
+padding: 35px 15px;
+box-shadow: 0px 5px 18px -11px rgb(150 150 150 / 80%);
+border: 1px solid #f3f2f2;
+}
+.login_user_input form label{
+font-size: 17px;
+font-weight: 500;
+color: #636363;
+}
+#loggedin_user b{
+color: #666768;
+}
+#loggedin_user input{
+width: 80%;
+}
+.fas{
+font-family: "fontawesome";
+}
+.crop_user_img{
+position: absolute;
+right: 20px;
+top: 5px;
+}img {
+display: block;
+max-width: 100%;
+}
+.preview {
+overflow: hidden;
+width: 210px;
+height: 210px;
+margin: 10px;
+margin-left: 15px;
+border: 1px solid red;
+}
+.label b{
+margin-bottom: 20px;
+}
+#loggedin_student b{
+color: #666768;
+}
+#loggedin_student input{
+width: 80%;
+}
+.search_course{
+border:1px solid #ddd;
+padding: 25px 25px;
+margin: 25px 0px;
+}
+.lesson_update_field input[type='text'],input[type='number'],textarea{
+border:1px solid #ddd;
+padding-left: 18px;
+height: 40px;
+}
+#file_div{
+position: relative;
+}
+#file_div label{
+position: absolute;
+font-size: 17px;
+padding: 7px 29px;
+top: 20px;
+left: 0;
+}
+#num_para{
+color: #e5e5e5;
+font-size:42px;
+text-align: center;
+}
+#title_para{
+font-weight: 500;
+font-size: 24px;
+}
+*{
+font-family: 'Roboto Condensed', sans-serif;
+}
+/* ====================================*/
